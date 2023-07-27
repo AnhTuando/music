@@ -1,0 +1,90 @@
+:root {
+  --background: #170f23;
+}
+.app {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  background: var(--background);
+}
+.button {
+  width: fit-content;
+  background-color: transparent;
+}
+.loop-color,
+.shuffle-color {
+  color: #aa63d1;
+}
+.song-list {
+  background-color: #221a2e;
+  position: absolute;
+  left: 0;
+  height: 100vh;
+}
+.song-info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+}
+.audio-control {
+  background: var(--background);
+  width: 100vw;
+  left: 0;
+  height: fit-content;
+}
+.song {
+  opacity: 0.5;
+}
+.song:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.opacity-1 {
+  opacity: 1;
+}
+.fit-content {
+  width: fit-content;
+}
+.w-70 {
+  width: 70%;
+}
+.w-40 {
+  width: 40%;
+}
+.img-info img {
+  height: 500px;
+}
+.cd-img-rotate {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  animation: rotate 5s linear infinite;
+}
+.cd-img-default {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+.volume {
+  transform: rotate(270deg);
+  width: 60px;
+}
+.cd-wrap {
+  position: absolute;
+  bottom: 15px;
+}
+/* animation */
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* Góc bắt đầu là 0 độ */
+  }
+  to {
+    transform: rotate(
+      360deg
+    ); /* Góc kết thúc là 360 độ (hoặc có thể sử dụng 100% thay vì 360deg) */
+  }
+}
