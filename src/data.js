@@ -10,14 +10,14 @@ const data = [
     id: 1,
     title: "Flower",
     singer: "Jisoo",
-    src: "/public/mp3/flower.mp3",
+    src: "/public/mp3/Flower.mp3",
     img: "/public/img/jisoo.jpg",
   },
   {
     id: 2,
     title: "Cupid",
     singer: "Fiffy Fiffy",
-    src: "/public/mp3/cupid.mp3",
+    src: "/public/mp3/Cupid.mp3",
     img: "/public/img/cupid.jpg",
   },
   {

@@ -7,10 +7,10 @@ import {
   setDuration,
   setCurrentTime,
   end,
-  handleVolume,
+ 
 } from "./features/player.slide";
 
-import SongList from "./components/songList";
+import SongList from "./components/SongList";
 import AudioControl from "./components/AudioControl";
 import SongInfo from "./components/SongInfo";
 
@@ -22,7 +22,7 @@ function App() {
   const duration = useSelector((state) => state.player.duration);
   const currentTime = useSelector((state) => state.player.currentTime);
   const isLoop = useSelector((state) => state.player.isLoop);
-  const isMute = useSelector((state) => state.player.isMute);
+ 
 
   const handleTimeUpdate = () => {
     dispatch(setCurrentTime(audioRef.current.currentTime));
